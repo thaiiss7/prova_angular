@@ -1,8 +1,48 @@
 .page-container {
     width: 100vw;
-    height: 100vh;
+    height: calc(100vh - 5rem);
     display: flex;
-    justify-content: center;
+    flex-direction: column;
+    justify-content: flex-start;
     align-items: center;
     background-color: var(--background-blue);
+}
+
+.button-container {
+    display: flex;
+    justify-content: center;
+    padding: 2rem;
+    align-self: flex-start;
+}
+
+.modal-bg {
+    position: fixed;
+    width: 100vw;
+    height: 100vh;
+    top: 0; left: 0;
+    z-index: 0;
+    backdrop-filter: blur(2px);
+}
+
+.modal-container {
+    display: flex;
+    flex-direction: column;
+    margin: auto;
+    position: fixed;
+    width: 30rem;
+    height: 10rem;
+    top: 0; left: 0;
+    right: 0;
+    bottom: 0;
+    z-index: 99;
+    background-color: rgb(217, 226, 240);
+    box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
+    border-radius: 1rem;
+    padding: 1rem;
+}
+
+.content {
+    display: flex;
+    padding: 1rem;
+    gap: 1rem;
 }

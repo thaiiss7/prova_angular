@@ -7,4 +7,6 @@
 
 :root {
     --background-blue: rgb(188, 209, 233);
+    --header-blue: rgb(43, 69, 109);
+    --hover: rgb(204, 204, 204);
 }

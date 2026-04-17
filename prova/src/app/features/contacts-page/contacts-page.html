@@ -1,3 +1,20 @@
+<app-header></app-header>
 <div class="page-container">
-    
+    <div class="button-container">
+        <app-button (onClick)="openModal()" [title]="'Add contact'"></app-button>
+    </div>
+    <app-contact-component (onClick)="openChat()"></app-contact-component>
+    <!-- colocar um ngfor -->
 </div>
+@if(open){
+    <div class="modal-bg"></div>
+    <div class="modal-container">
+        <header>
+            <h2>add contact</h2>
+        </header>
+        <div class="content">
+            <app-input-component></app-input-component>
+            <app-button (onClick)="open=false" [title]="'save'"></app-button>
+        </div>
+    </div>
+}

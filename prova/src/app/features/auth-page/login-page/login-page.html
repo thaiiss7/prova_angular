@@ -3,6 +3,16 @@
         <header>
             <h1>Login</h1>
         </header>
-        <form action=""></form>
+        <form action="get" (ngSubmit)="login()">
+            <app-input-component
+                [label]="'email'"
+            ></app-input-component>
+            <app-input-component
+                [label]="'password'"
+            ></app-input-component>
+            <app-button
+                [title]="'Login'"
+            ></app-button>
+        </form>
     </div>
 </div>

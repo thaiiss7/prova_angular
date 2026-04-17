@@ -1,0 +1,13 @@
+header {
+    width: 100vw;
+    height: 5rem;
+    display: flex;
+    padding: 2rem;
+    background-color: var(--header-blue);
+    color: white;
+    align-items: center;
+
+    h1 {
+        font-family: cursive;
+    }
+}
